@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.androidui.MainActivity">
+
+    <TextView
+        android:layout_width="357dp"
+        android:layout_height="64dp"
+        android:text="Horizontal"
+        android:id="@+id/Layout1"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="45sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="5dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp" />
+
+    <TextView
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:text="Vertical"
+        android:id="@+id/Layout2"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="45sp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/Layout1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/Layout1" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Grid"
+        android:id="@+id/Layout3"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="45sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/Layout2"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/Layout2"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/Layout2" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Relative"
+        android:id="@+id/Layout4"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textSize="45sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/Layout3"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/Layout3"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/Layout3" />
+
+
+</android.support.constraint.ConstraintLayout>
